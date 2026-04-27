@@ -1,0 +1,149 @@
+:root {
+  --color-primary: #a1887f;
+  --color-primary-dark: #8d6e63;
+  --color-primary-light: #efebe9;
+  --color-secondary: #ffb74d;
+  --color-background: #fffcf9;
+  --color-surface: #ffffff;
+  --color-text: #5d4037;
+  --color-text-light: #8d6e63;
+  --color-border: #e0e0e0;
+
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: var(--font-body);
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-surface);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+/* Utils */
+.text-center { text-align: center; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-4 { margin-bottom: 4rem; }
+
+/* Marcos florales elegantes para las imágenes */
+.floral-frame {
+  position: relative;
+  border-radius: 12px;
+  padding: 16px; /* Más espacio para el marco */
+  background: var(--color-surface);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.floral-frame::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  /* Gradientes florales cálidos que nacen de las esquinas */
+  background-image: 
+    radial-gradient(circle at top left, rgba(230, 168, 168, 0.4) 0%, transparent 40%),
+    radial-gradient(circle at bottom right, rgba(141, 110, 99, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at top right, rgba(245, 230, 211, 0.5) 0%, transparent 30%),
+    /* Patrón de hojas/flores con SVG incrustado más visible */
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5C35 15 45 25 55 30C45 35 35 45 30 55C25 45 15 35 5 30C15 25 25 15 30 5Z' fill='%23d4b8b8' fill-opacity='0.15'/%3E%3Cpath d='M30 15C33 22 38 27 45 30C38 33 33 38 30 45C27 38 22 33 15 30C22 27 27 22 30 15Z' fill='%238d6e63' fill-opacity='0.1'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 100% 100%, 100% 100%, 60px 60px;
+  z-index: 1;
+}
+
+.floral-frame::after {
+  content: "";
+  position: absolute;
+  top: 10px; left: 10px; right: 10px; bottom: 10px;
+  border: 1px solid rgba(141, 110, 99, 0.2);
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.floral-frame > * {
+  border-radius: 8px;
+  display: block;
+  position: relative;
+  z-index: 3;
+}

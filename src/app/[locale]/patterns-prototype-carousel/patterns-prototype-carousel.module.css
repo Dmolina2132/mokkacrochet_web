@@ -1,0 +1,111 @@
+.patternsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.patternCategory {
+  background-color: var(--color-surface);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.patternCategory h2 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.patternCategory p {
+  margin-bottom: 1.5rem;
+  color: var(--color-text-light);
+}
+
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  flex: 1;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.card {
+  flex: 0 0 200px;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.placeholderText {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+  padding: 1rem;
+}
+
+.cardContent h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  color: var(--color-text);
+}
+
+.difficulty {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.carouselButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.carouselButton:hover {
+  background-color: var(--color-primary-dark);
+}

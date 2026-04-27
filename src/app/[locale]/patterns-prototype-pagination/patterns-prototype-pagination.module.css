@@ -1,0 +1,110 @@
+.patternsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.patternCategory {
+  background-color: var(--color-surface);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.patternCategory h2 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.patternCategory p {
+  margin-bottom: 1.5rem;
+  color: var(--color-text-light);
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  display: block;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.placeholderText {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+  padding: 1rem;
+}
+
+.cardContent h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  color: var(--color-text);
+}
+
+.difficulty {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.paginationButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+}
+
+.paginationButton:disabled {
+  background-color: var(--color-border);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.paginationInfo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}

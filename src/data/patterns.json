@@ -1,0 +1,40 @@
+{
+  "patterns": [
+    {
+      "id": "charmander-basico",
+      "title": "Patrón 1",
+      "category": "own",
+      "difficulty": "Principiante",
+      "description": "Un patrón sencillo y rápido para tejer a Charmander. Ideal para quienes están empezando. Incluye lista de materiales y abreviaturas.",
+      "price": "Gratis",
+      "image": "/photos/design/Screenshot 2026-04-26 at 21.52.44.png",
+      "youtubeId": "dQw4w9WgXcQ",
+      "downloadUrl": "#",
+      "etsyUrl": null
+    },
+    {
+      "id": "oso-dormilon",
+      "title": "Patrón 2",
+      "category": "tested",
+      "difficulty": "Intermedio",
+      "description": "Patrón testado originalmente diseñado por 'CrochetMagic'. Hemos hecho algunas modificaciones en las orejas que explicamos en este patrón.",
+      "price": "5.00€",
+      "image": "/photos/design/Screenshot 2026-04-26 at 21.52.55.png",
+      "youtubeId": null,
+      "downloadUrl": "#",
+      "etsyUrl": "https://www.etsy.com/listing/placeholder"
+    },
+    {
+      "id": "pikachu-premium",
+      "title": "Patrón 3",
+      "category": "own",
+      "difficulty": "Avanzado",
+      "description": "Nuestro patrón estrella. Incluye técnicas avanzadas para las mejillas y la cola. Viene con vídeo explicativo completo.",
+      "price": "8.50€",
+      "image": "/photos/design/Screenshot 2026-04-26 at 21.52.38.png",
+      "youtubeId": "dQw4w9WgXcQ",
+      "downloadUrl": "#",
+      "etsyUrl": "https://www.etsy.com/listing/placeholder"
+    }
+  ]
+}

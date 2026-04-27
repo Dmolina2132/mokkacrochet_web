@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "Iniciando servidor local de Mokka Crochet..."
+echo "Abre tu navegador en http://localhost:3000"
+echo ""
+echo "Prototipos de diseño:"
+echo "  - Grid: http://localhost:3000/es/designs-prototype-grid"
+echo "  - Paginación: http://localhost:3000/es/designs-prototype-pagination"
+echo "  - Carrusel: http://localhost:3000/es/designs-prototype-carousel"
+echo "  - Original: http://localhost:3000/es/designs"
+echo ""
+echo "Prototipos de patrones:"
+echo "  - Grid: http://localhost:3000/es/patterns-prototype-grid"
+echo "  - Paginación: http://localhost:3000/es/patterns-prototype-pagination"
+echo "  - Carrusel: http://localhost:3000/es/patterns-prototype-carousel"
+echo "  - Original: http://localhost:3000/es/patterns"
+echo ""
+npm run dev
